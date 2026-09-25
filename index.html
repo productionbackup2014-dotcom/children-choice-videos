@@ -22,16 +22,14 @@ a{color:inherit;text-decoration:none}
 button,input,select{font:inherit}
 button{color:inherit}
 header{
- position:relative;isolation:isolate;overflow:hidden;text-align:center;padding:42px 20px 48px;
+ position:relative;isolation:isolate;overflow:hidden;text-align:center;padding:42px 20px 54px;
  background:
- radial-gradient(circle at 20% 18%,rgba(255,201,60,.24),transparent 15%),
- radial-gradient(circle at 82% 20%,rgba(41,202,255,.19),transparent 18%),
- radial-gradient(circle at 50% 0%,rgba(49,95,223,.2),transparent 38%),
+ linear-gradient(90deg,rgba(16,21,40,.64),rgba(16,21,40,.28) 24%,rgba(16,21,40,.24) 76%,rgba(16,21,40,.64)),
+ linear-gradient(180deg,rgba(12,18,36,.08),rgba(12,18,36,.86)),
+ url("assets/hero-learning-bg.png") center/cover no-repeat,
  linear-gradient(180deg,var(--soft),var(--bg))
 }
-header:before,header:after{content:"";position:absolute;z-index:-1;bottom:-42px;width:310px;height:190px;border-radius:36px;background:linear-gradient(145deg,rgba(49,95,223,.22),rgba(255,201,60,.12));filter:blur(2px);opacity:.55;transform:rotate(-8deg)}
-header:before{left:max(22px,calc(50% - 620px))}
-header:after{right:max(22px,calc(50% - 620px));transform:rotate(8deg)}
+header:after{content:"";position:absolute;z-index:-1;inset:auto 0 0;height:90px;background:linear-gradient(180deg,transparent,var(--bg))}
 .avatar{width:92px;height:92px;border-radius:50%;object-fit:cover;border:4px solid var(--card);box-shadow:0 0 0 3px var(--blue),0 14px 40px rgba(49,95,223,.28)}
 h1{font:800 clamp(32px,6vw,48px)/1.04 "Baloo 2";margin:19px 0 7px;letter-spacing:.2px}
 .subtitle{font-size:14px;color:var(--muted)}
